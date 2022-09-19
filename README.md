@@ -1,6 +1,6 @@
 👋 Hi , I'm Al-Amin
 
-🌱 I’m currently learning Automation testing frameworks,CI/CD pipeline.
+🌱 I’m currently learning Automation testing frameworks like Selenium,Cypress,Appium .
 
 👨‍💻 All of my projects are available at https://github.com/Alamin2017?tab=repositories
 
