@@ -4,7 +4,7 @@
 
 👨‍💻 All of my projects are available at https://github.com/Alamin2017?tab=repositories
 
-💞️ I’m looking to collaborate on ...
+💞️ I’m looking to collaborate on with...
 
 📫 How to reach me 
 alamincse12@gmail.com
