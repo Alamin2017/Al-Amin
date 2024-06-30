@@ -234,6 +234,35 @@ public static void SwipeLeftScreenOngoingImplement() {
         int end_y = 0;
         touchAction.press(PointOption.point(start_x, start_y)).waitAction(WaitOptions.waitOptions(Duration.ofSeconds(1))).moveTo(PointOption.point(end_x, end_y)).release().perform();
 }
+How to read json data :
+
+public class JSONDataRead {
+    private String email;
+    private String password;
+    public String getEmail() {
+        return email;
+    }
+    public String getPassword() {
+        return password;
+    }
+    public void setEmail(String email) {
+        this.email = email;
+    }
+    public void setPassword(String password) {
+        this.password = password;
+    }
+    public void getUserCreds(int pos) throws IOException, ParseException, org.json.simple.parser.ParseException {
+        String fileName="C:\\Users\\hp\\IdeaProjects\\jdk17check\\src\\test\\java\\testdata\\users.json";
+        JSONParser jsonParser=new JSONParser();
+        Object obj=jsonParser.parse(new FileReader(fileName));
+        JSONArray jsonArray=(JSONArray) obj;
+        JSONObject jsonObject=(JSONObject) jsonArray.get(pos);
+        setEmail((String)jsonObject.get("email"));
+        setPassword((String)jsonObject.get("password"));
+    }
+}
+JSONDataRead data_json=new JSONDataRead();
+
 
 
 
