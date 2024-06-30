@@ -264,14 +264,8 @@ public class JSONDataRead {
 JSONDataRead data_json=new JSONDataRead();
 
 # if you want to configure triggers for Azure CI see
-# https://docs.microsoft.com/en-us/azure/devops/pipelines/build/triggers?view=azure-devops&tabs=yaml#tags
 
 jobs:
-
-  # Example job that runs end-to-end tests using Cypress test runner
-  #   https://www.cypress.io/
-
-  # Job names can contain alphanumeric characters and '_', cannot start with a number
   - job: Cypress_E2E_Test
     pool:
       vmImage: 'ubuntu-latest'
@@ -282,27 +276,10 @@ jobs:
         inputs:
           versionSpec: '18.x'
           displayName: 'Install Node.js'
-
-      # NPM modules and Cypress binary should be cached
-      # otherwise the install will be too slow
-      # https://docs.microsoft.com/en-us/azure/devops/pipelines/caching/?view=azure-devops
-      # since the username / user home directory are not available via system variables
-      # (there is even an open question about it)
-      # https://docs.microsoft.com/en-us/azure/devops/pipelines/build/variables?view=azure-devops
-      # just use "/home/vsts" for now
-
       # Install Node dependencies
       - script: npm ci
         displayName: 'Install NPM dependencies'
 
-      # The next command starts the server and runs Cypress end-to-end tests against it.
-      # The test artifacts (screenshots, test output) will be uploaded to Cypress Cloud.
-      # To record on Cypress Cloud we need to set CYPRESS_RECORD_KEY environment variable.
-      # For setting ci-build-id, BUILD_BUILDNUMBER is a good candidate
-
-      # Note that `npm run start & npx cypress run` is included below for brevity only.
-      # This pattern is not ideal because Cypress may run before the server reaches a true ready state.
-      # For better solutions see https://on.cypress.io/guides/continuous-integration.
       - script: |
       
           npm install cypress --save-dev
@@ -313,6 +290,30 @@ jobs:
           TERM: xterm
           # map the secret Cypress record key as environment variable for this step
           CYPRESS_RECORD_KEY: $(CYPRESS_RECORD_KEY)
+        
+ const { defineConfig } = require("cypress");
+
+module.exports = defineConfig({
+  projectId: 'iqjavs',
+
+  e2e: {
+    watchForFileChanges:false,
+    defaultCommandTimeout:30000,
+    requestTimeout:30000,
+    responseTimeout:60000,
+    viewportWidth:1280,
+    viewportHeight:720,
+    video:false,
+    chromeWebSecurity:false,
+    setupNodeEvents(on, config) {
+      // implement node event listeners here
+      screenshotOnRunFailure=true;
+    },
+    
+    testIsolation: false
+  },
+});
+
 
 
 
