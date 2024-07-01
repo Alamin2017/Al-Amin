@@ -318,5 +318,7 @@ describe('URL browsing and saving test', () => { const search_keyword_worklist=[
 
 
 
+describe('URL browsing and saving test', () => { const search_keyword_worklist=["work","worklist"]; it('Browses URLs and saves them in JSON format', () => { cy.visit("https://unifytest.julyservices.local/Unify.V2.Web/login"); login_obj.username_text_field().type("alamin"); login_obj.password_text_field().type("123"); login_obj.login_button().click(); home_obj.open_main_menu_button().click(); const visitedUrls=[]; search_keyword_worklist.forEach((search_keyword)=>{ drawer_obj.looking_for_search_field().type(search_keyword); const total_worklist=drawer_obj.worklist_search_item_count(); total_worklist.its('length').then(length=>{ for(let i=0;i<length;i++){ drawer_obj.worklist_search_item_count().eq(i).click(); cy.url().then(url=>{ visitedUrls.push(url); }); cy.wait(1000); home_obj.open_main_menu_button().click(); cy.wait(1000); } }); drawer_obj.looking_for_search_field().clear(); }); const dataToSave = { visitedUrls: visitedUrls }; cy.writeFile('visited_urls.json', dataToSave) drawer_obj.close_button().click(); }); });
+
 
 
