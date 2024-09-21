@@ -1,4 +1,4 @@
-👋 Hi, I'm Al-Amin from Bangladesh..
+👋 Hi, I'm Al-Amin from Bangladesh.
 
 🌱 I’m working on Automation testing frameworks like Selenium, and Cypress.
 
