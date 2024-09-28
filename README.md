@@ -13,8 +13,8 @@ Automation related document :
 
 What is Appium: 
 
-Appium is an open-source test automation framework for use with native, hybrid, and mobile apps.
-It drives Android, iOS apps using the WebDriver protocol.
+Appium is an open-source test automation framework for native, hybrid, and mobile apps.
+It drives Android, and iOS apps using the WebDriver protocol.
 
 Need to Install software for setting up Environment Appium with Java for Mobile Application Automation:
 
