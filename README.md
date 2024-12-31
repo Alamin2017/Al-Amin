@@ -9,7 +9,6 @@
 📫 How to reach me 
 alamincse12@gmail.com
 
-This is Al-Amin 
-I am an SQA Engineer with 4.11 years of experience in Software Testing for Fintech, Telco, Information Management, Health, and Galaxy Wearable Applications.
+This is Al-Amin and I am working as an SQA Engineer with 4.11 years of experience in Software Testing for Fintech, Telco, Information Management, Health, and Galaxy Wearable Applications.
 Automation Tools: Cypress|Playwright|Selenium.
 Languages: Javascript & Java.
