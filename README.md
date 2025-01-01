@@ -14,7 +14,7 @@ Automation Tools: Cypress|Playwright|Selenium.
 Languages: Javascript & Java.
 
 **Software Quality Assurance Engineer III**
-**DataPath Ltd**
+****DataPath Ltd****
 
 Job Responsibilities:
 1. Analyze client requirements and collaborate with the development team to clarify business logic and technical specifications.
