@@ -28,7 +28,7 @@ Job Responsibilities:
 9. Stay updated on emerging QA tools and technologies, integrating new approaches to improve testing efficiency and quality.
 
 **Software Quality Assurance Engineer(Mid Level)**
-**Brain Station 23 PLC**
+**at Brain Station 23 PLC**
 
 Job Responsibilities:
 1. Analyze client requirements and collaborate with the business team to clarify user stories and acceptance criteria. 
@@ -38,7 +38,7 @@ Job Responsibilities:
 5. Perform API testing using Postman to validate backend services, and develop automated test scripts for API workflows.
 
 **Software Quality Assurance Engineer**
-**Samsung R&D Institute Bangladesh** 
+**at Samsung R&D Institute Bangladesh** 
 
 Job Responsibilities:
 1. Develop and execute detailed test plans, and write and perform test cases for comprehensive manual testing.
