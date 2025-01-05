@@ -9,7 +9,7 @@ alamincse12@gmail.com
 
 Working as an SQA Engineer with 5 years of experience in Software Testing for Fintech, Telco, Information Management, Health, and Galaxy Wearable Applications.
 Automation Tools: Cypress|Playwright|Selenium.
-Languages: Javascript & Java.
+Languages: Javascript & Java & TypeScript.
 
 **Software Quality Assurance Engineer III**
 **at DataPath Ltd**
