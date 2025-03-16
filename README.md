@@ -1,4 +1,4 @@
-# 👋 Hi, I'm Al-Amin
+# 👋 Hi, I'm Al Amin
 
 🎯 **Software Quality Assurance Engineer III** at **DataPath Ltd**  
 🌍 Based in **Bangladesh**  
